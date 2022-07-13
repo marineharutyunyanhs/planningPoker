@@ -1,0 +1,23 @@
+.card {
+  width: 150px;
+  height: 209px;
+  margin: 8px;
+  float: left;
+  background-color: #888888b0;
+  perspective: 1000px;
+}
+
+.card.selected {
+  background-color: #2ebb98 !important;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.clickable {
+  cursor: pointer;
+}

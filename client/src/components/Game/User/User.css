@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.cardsContainer {
+  display: inline-block;
+  width: 92%;
+  padding-top: 64px;
+  justify-content: center;
+  align-items: center;
+}

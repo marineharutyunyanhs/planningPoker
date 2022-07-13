@@ -1,0 +1,63 @@
+.topicContainer .story-info-form {
+    width: 96%;
+}
+
+.topicContainer {
+    display: block;
+    margin-bottom: 60px;
+}
+
+.user-story-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.clearIcon {
+    border: none;
+    background: white;
+    top: 0;
+    right: 0;
+    color: #888;
+    padding: 18px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send-button {
+    display: block;
+}
+
+.open-cards-button, .send-button, .stop-game-button {
+    height: 36px;
+    width: 16% !important;
+}
+
+@media (max-width: 1343px) {
+    .open-cards-button, .send-button, .stop-game-button {
+        width: 22.5% !important;
+        font-size: 11.5px;
+        height: 34px;
+    }
+
+}
+@media (max-width: 689px) {
+    .open-cards-button, .send-button, .stop-game-button {
+        width: 25% !important;
+    }
+}
+
+@media (max-width: 555px) {
+    .open-cards-button, .send-button, .stop-game-button {
+        width: 29% !important;
+    }
+}
+
+@media (max-width: 490px) {
+    .action-buttons-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+    .open-cards-button, .send-button, .stop-game-button {
+        height: 47px;
+    }
+}

@@ -1,0 +1,137 @@
+.historyContainer {
+    height: 65vh;
+    width: 100%;
+}
+
+.highlight-last-score > div:first-child {
+    animation: fadeIn ease 4.5s;
+    -webkit-animation: fadeIn ease 4.5s;
+}
+
+.highlight-last-score > div:first-child .averageNumber{
+    animation: fadeInAverageNum ease 4.5s;
+    -webkit-animation: fadeInAverageNum ease 4.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        background-color: #3498db;
+        color: #ffffffd1;
+    }
+    60%{
+          color: #ffffffd1;
+    }
+    100% {
+        color: inherit;
+        background-color: inherit;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        background-color: #3498db;
+        color: #ffffffd1;
+    }
+    60%{
+        color: #ffffffd1;
+    }
+    100% {
+        background-color: inherit;
+        color: inherit;
+    }
+}
+
+@keyframes fadeInAverageNum {
+    0% { color: #24548c; }
+    100% { color: #76a5db; }
+}
+
+@-webkit-keyframes fadeInAverageNum {
+    0% { color: #24548c;}
+    100% { color: #76a5db; }
+}
+
+.activeContainer {
+    padding-left: 25px;
+    margin: 4.5% 0 4.5% 0;
+}
+
+.activeContainer > div {
+    margin-left: -25px;
+    padding: 12px 12px 12px 25px;
+}
+
+.topWrapper, .actionsWrapper {
+    display: flex;
+}
+
+.topWrapper {
+    justify-content: space-between;
+}
+
+.story-title {
+    padding-bottom: 4px;
+    font-variant: none;
+}
+
+.averageNumber {
+    font-size: smaller;
+    color: #76a5db;
+    font-weight: 600;
+    padding-left: 12px;
+}
+
+.participantsVotes {
+    list-style-type: none;
+    padding-left: 12px;
+}
+
+.highlight {
+    background-color: #3498db;
+    padding: 12px 12px 17px 25px;
+    margin-left: -25px;
+    color: #ffffffd1;
+}
+
+.highlight .averageNumber {
+    color: #24548c;
+}
+
+.delete, .cancle, .replay {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+    background-size: 26px 26px;
+    opacity: 0.5;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+.delete:hover, .replay:hover, .cancle:hover {
+    opacity: 1;
+    box-shadow: none;
+}
+
+/*------scrolling-------*/
+::-webkit-scrollbar {
+    width: 15.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #bbb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

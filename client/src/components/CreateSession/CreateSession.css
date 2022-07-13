@@ -1,0 +1,82 @@
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.connectJira {
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    font-size: 20px;
+    text-decoration: unset;
+    font-weight: 700;
+    color: #40526e;
+}
+
+.jiraImg {
+    width: 60px;
+    margin: 0 0 -4px 6px;
+}
+
+.joinInput {
+  border: none;
+  border-radius: 0;
+  border-right-width: 0;
+  border-right-color: inherit;
+  border-right-style: ridge;
+  width: 100%;
+  padding: 14px 13px 11px 14px;
+  font-size: smaller;
+}
+
+.heading {
+  color: white;
+  font-size: 1.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+h4.heading {
+    color: white;
+    font-size: 17px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+@media (max-width: 1343px) {
+  .joinInnerContainer {
+    width: 26%;
+  }
+}
+
+@media (max-width: 1029px) {
+  .joinInnerContainer {
+    width: 31%;
+  }
+
+  .jiraImg {
+      width: 44px;
+      margin: 0 0 -2px 6px;
+  }
+  .connectJira {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 850px) {
+    .joinOuterContainer {
+        height: 100%;
+        margin-top: 15%;
+    }
+
+    .joinInnerContainer {
+        width: 90%;
+    }
+}
